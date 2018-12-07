@@ -1,0 +1,95 @@
+{
+	"version": 1,
+	"allow_edit": true,
+	"plugins": [],
+	"panes": [
+		{
+			"width": 1,
+			"row": {
+				"1": 1,
+				"3": 1
+			},
+			"col": {
+				"1": 1,
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "gauge",
+					"settings": {
+						"title": "Temperature",
+						"value": "datasources[\"temp\"][\"count\"]",
+						"units": "c",
+						"min_value": "-10",
+						"max_value": "50"
+					}
+				},
+				{
+					"type": "gauge",
+					"settings": {
+						"title": "Hum",
+						"value": "datasources[\"hum\"][\"count\"]",
+						"units": "%",
+						"min_value": 0,
+						"max_value": 100
+					}
+				},
+				{
+					"type": "sparkline",
+					"settings": {
+						"title": "HeatBeat",
+						"value": "datasources[\"Heart\"][\"count\"]"
+					}
+				}
+			]
+		}
+	],
+	"datasources": [
+		{
+			"name": "temp",
+			"type": "FIWARE Orion",
+			"settings": {
+				"use_https": false,
+				"cbhost": "127.0.0.1:1026",
+				"use_thingproxy": false,
+				"service": "openiot",
+				"servicepath": "/",
+				"type": "Temperature",
+				"id": "urn:accra:Temperature:001",
+				"refresh": 5,
+				"name": "temp"
+			}
+		},
+		{
+			"name": "hum",
+			"type": "FIWARE Orion",
+			"settings": {
+				"use_https": false,
+				"cbhost": "127.0.0.1:1026",
+				"use_thingproxy": false,
+				"service": "openiot",
+				"servicepath": "/",
+				"type": "Humidity",
+				"id": "urn:accra:Humidity:001",
+				"refresh": 5,
+				"name": "hum"
+			}
+		},
+		{
+			"name": "Heart",
+			"type": "FIWARE Orion",
+			"settings": {
+				"use_https": false,
+				"cbhost": "127.0.0.1:1026",
+				"use_thingproxy": false,
+				"service": "openiot",
+				"servicepath": "/",
+				"type": "BeatCount",
+				"id": "urn:accra:HeartBeat:002",
+				"refresh": 5
+			}
+		}
+	],
+	"columns": 3
+}
