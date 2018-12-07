@@ -51,7 +51,7 @@
 			"type": "FIWARE Orion",
 			"settings": {
 				"use_https": false,
-				"cbhost": "127.0.0.1:1026",
+				"cbhost": "192.168.1.111:1026",
 				"use_thingproxy": false,
 				"service": "openiot",
 				"servicepath": "/",
@@ -66,7 +66,7 @@
 			"type": "FIWARE Orion",
 			"settings": {
 				"use_https": false,
-				"cbhost": "127.0.0.1:1026",
+				"cbhost": "192.168.1.111:1026",
 				"use_thingproxy": false,
 				"service": "openiot",
 				"servicepath": "/",
@@ -81,7 +81,7 @@
 			"type": "FIWARE Orion",
 			"settings": {
 				"use_https": false,
-				"cbhost": "127.0.0.1:1026",
+				"cbhost": "192.168.1.111:1026",
 				"use_thingproxy": false,
 				"service": "openiot",
 				"servicepath": "/",
