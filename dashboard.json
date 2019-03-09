@@ -19,7 +19,7 @@
 					"type": "gauge",
 					"settings": {
 						"title": "Temperature",
-						"value": "datasources[\"Temperature\"][\"count\"]",
+						"value": "datasources[\"temp\"][\"count\"]",
 						"units": "c",
 						"min_value": "-10",
 						"max_value": "50"
@@ -29,7 +29,7 @@
 					"type": "gauge",
 					"settings": {
 						"title": "Hum",
-						"value": "datasources[\"Humidity\"][\"count\"]",
+						"value": "datasources[\"hum\"][\"count\"]",
 						"units": "%",
 						"min_value": 0,
 						"max_value": 100
@@ -39,7 +39,7 @@
 					"type": "sparkline",
 					"settings": {
 						"title": "HeatBeat",
-						"value": "datasources[\"BeatCount\"][\"count\"]"
+						"value": "datasources[\"Heart\"][\"count\"]"
 					}
 				}
 			]
